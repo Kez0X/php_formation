@@ -29,13 +29,6 @@
         }
     }
 
-    class Matrice extends Tableau{
-
-        public function somme(){
-            for ()
-        }
-    }
-
     $tab = new Tableau(array("Valeriia" => 16, "Vadim" => 12));
     $chaine = $tab->retourne();
 

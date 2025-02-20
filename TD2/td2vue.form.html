@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD2 Vue Form</title>
+</head>
+<body>
+    <form action="d2controleur.php" enctype="multipart/form-data" method="post">
+        <fieldset>
+            <legend>Location de véhicule</legend>
+            <label for="type">Type</label><br>
+            <select name="type" id="type">
+                <option selected="selected">Touristique</option><br>
+                <option>Utilitaire</option>
+            </select><br>
+            <label for="energie">Nom</label><br>
+            <ul>
+                <li>Essence : <input type="radio" name="energie" value="Essence" id="energie" /></li>
+                <li>Electrique : <input type="radio" name="energie" value="Electrique" id="energie"checked/><br></li>
+                <li>GPL : <input type="radio" name="energie" value="GPL" id="energie"/><br></li>
+            </ul>
+            <br>
+            <label for="days">Nombre de jours</label>
+            <input type="text" name="days" id="days" size="5"/><br>
+            <label for="assurance">Assurance</label>
+            <input type="checkbox" name="assurance" value="assurance"/><br>
+            <input type="reset" value="Reinitialiser" />
+            <input type="submit" value="Valider" />
+        </fieldset>
+    </form>
+</body>
+</html>

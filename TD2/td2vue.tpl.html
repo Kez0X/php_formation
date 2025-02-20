@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD2 Vue</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Champ</th>
+            <th>Valeur</th>
+        </tr>
+        <tr>
+            <td>[champs.val;block=tr]</td>
+            <td>[values.val;block=tr]</td>
+        </tr>
+    </table>
+    <button id="go-back">Go back!</button>
+    <script>
+        document.getElementById("go-back").addEventListener("click", () => {
+            history.back();
+        });
+    </script>
+</body>
+</html>
